@@ -27,12 +27,16 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     configaccessor.cpp \
-    logger.cpp
+    logger.cpp \
+    character.cpp \
+    creatorwidget.cpp
 
 HEADERS += \
         mainwindow.h \
     configaccessor.h \
-    logger.h
+    logger.h \
+    character.h \
+    creatorwidget.h
 
 FORMS += \
         mainwindow.ui
