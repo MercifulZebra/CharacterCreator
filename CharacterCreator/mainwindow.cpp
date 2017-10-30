@@ -50,6 +50,17 @@ bool MainWindow::init(QString config_filename) {
             }
         }
 
+        if (initSuccess_flag) {
+            creatorWidget_index = mainStack->addWidget(creatorWidget);
+
+            if (creatorWidget_index != -1) {
+                mainStack->setCurrentIndex(creatorWidget_index);
+            }
+            else {
+                initSuccess_flag = false;
+            }
+        }
+
     }
 
     return initSuccess_flag;

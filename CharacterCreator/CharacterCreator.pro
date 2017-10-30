@@ -29,14 +29,20 @@ SOURCES += \
     configaccessor.cpp \
     logger.cpp \
     character.cpp \
-    creatorwidget.cpp
+    creatorwidget.cpp \
+    classtabwidget.cpp \
+    racetabwidget.cpp \
+    raceobject.cpp
 
 HEADERS += \
         mainwindow.h \
     configaccessor.h \
     logger.h \
     character.h \
-    creatorwidget.h
+    creatorwidget.h \
+    classtabwidget.h \
+    racetabwidget.h \
+    raceobject.h
 
 FORMS += \
         mainwindow.ui

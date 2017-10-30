@@ -2,6 +2,10 @@
 #define CONFIGACCESSOR_H
 
 #include <QObject>
+#include <QTextStream>
+#include <QVector>
+
+class RaceObject;
 
 class ConfigAccessor : public QObject
 {
@@ -11,6 +15,11 @@ public:
 
     void clear();
     bool loadConfig(QString config_filename);
+
+    QVector<RaceObject *> races;
+
+private:
+    RaceObject* loadRace(QTextStream &inFile);
 
 signals:
 

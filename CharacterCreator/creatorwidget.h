@@ -10,18 +10,24 @@ namespace logger {
 
 class ConfigAccessor;
 
+class ClassTabWidget;
+class RaceTabWidget;
+
+
 class CreatorWidget : public QTabWidget
 {
     Q_OBJECT
 public:
     explicit CreatorWidget(QWidget *parent = nullptr);
 
-    bool init(ConfigAccessor *accessor, logger::Logger *nLog);
+    bool init(logger::Logger *nLog, ConfigAccessor *accessor);
 
     logger::Logger *log;
 
     ConfigAccessor *configAccessor;
 
+    RaceTabWidget *raceTab;
+    ClassTabWidget *classTab;
 
 signals:
 
